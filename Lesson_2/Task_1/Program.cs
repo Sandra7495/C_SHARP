@@ -1,4 +1,18 @@
 ﻿Console.Write("Введи трёхзначное число: ");
-int Number = Convert.ToInt32(Console.ReadLine());
-string stringNumber = Convert.ToString(Number);
-Console.WriteLine("Вторая цифра этого числа = "+ stringNumber[1]);
+string Number = Console.ReadLine();
+if (Number.Length == 3)
+{
+    int Num = Convert.ToInt32(Number);
+    int n2 = Num % 100 / 10;
+    Console.WriteLine("Вторая цифра этого числа = " + n2);
+}
+else 
+{
+    Console.WriteLine("Число не является трехзначным ");
+}
+   
+
+
+ 
+
+
